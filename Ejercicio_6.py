@@ -5,7 +5,7 @@ import pandas as pd
 # Importación de los datos
 datos = pd.read_csv('Datos_estudiantes.csv')
 
-# Creacioón del DataFrame
+# Creacion del DataFrame
 df_alumnos = pd.DataFrame(datos)
 # Calcular el promedio individual de cada estudiante
 df_alumnos['Promedio'] = round(df_alumnos[['Nota1', 'Nota2', 'Nota3']].mean(axis=1),1)

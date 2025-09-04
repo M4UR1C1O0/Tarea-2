@@ -5,7 +5,7 @@ import pandas as pd
 # Importación de los datos
 datos = pd.read_csv('Datos_estudiantes.csv')
 
-# Creacioón del DataFrame
+# Creacion del DataFrame
 df_alumnos = pd.DataFrame(datos)
 
 solo_notas = ['Nota1','Nota2','Nota3']

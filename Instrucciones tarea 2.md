@@ -10,3 +10,5 @@ Desafío:
 4.¿Qué porcentaje de estudiantes tiene al menos una nota bajo 4.0?
 
 5.Entrega un listado ordenado (de mayor a menor) de los estudiantes según su promedio.
+
+6. Calcular el promedio total del cuso

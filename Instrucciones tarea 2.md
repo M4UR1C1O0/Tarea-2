@@ -11,4 +11,4 @@ Desafío:
 
 5.Entrega un listado ordenado (de mayor a menor) de los estudiantes según su promedio.
 
-6. Calcular el promedio total del cuso
+6.Calcular el promedio total del cuso

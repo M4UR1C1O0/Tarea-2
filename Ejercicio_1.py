@@ -16,7 +16,10 @@ df_alumnos['Promedio'] = df_alumnos[Notas].mean(axis=1).round(1) # axis=1 es par
 
 #print(df_alumnos)
 
-# Ordenar en la columna 'Promedio' de mayor a menor
-df_alumnos_aordenados = df_alumnos.sort_values('Promedio', ascending=False)
+# Sacamos los estudiantes con mayor y menor promedio
+df_alumnos_max = df_alumnos.loc[df_alumnos['Promedio'].idxmax()]
+df_alumnos_min = df_alumnos.loc[df_alumnos['Promedio'].idxmin()]
 
-print(df_alumnos_aordenados)
+print('El alumno con mayor promedio es:','\n',df_alumnos_max)
+print('El alumno con menor promedio es:','\n',df_alumnos_min)
+print('Los promedios de los estudiantes son:','\n',df_alumnos)

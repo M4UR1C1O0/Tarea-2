@@ -9,8 +9,9 @@ datos = pd.read_csv('Datos_estudiantes.csv')
 df_alumnos = pd.DataFrame(datos)
 
 # Cuantos aprobaron con mayor a 4.0
+Notas = ['Nota1', 'Nota2', 'Nota3']
 
-# Guardamos los aprobados en una nueva variable
-df_alumnos_aprobados = df_alumnos[df_alumnos['Promedio'] > 4.0]
+# Revisamos si el estudiante aprobó con todas las notas mayores a 4.0
+df_alumnos = df_alumnos[df_alumnos[Notas].gt(4.0).all(axis=1)]
 
-print(df_alumnos_aprobados)
+print('El numero de alumnos que aprobaron todos sus ramos fueron:',len(df_alumnos),'\n',df_alumnos)
